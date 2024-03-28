@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration Form</title>
+    <header><b>Registration Form</b></header>
+    <br>
+    <br>
+    <style>
+        header {
+            background-color: #a8efff;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #000;
+        }
+
+        form {
+            text-align: center;
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="submit"],
+        input[type="email"],
+        input[type="number"],
+        input[type="tel"] {
+            width: 90%;
+            margin-bottom: 10px;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #e6fd8c;
+            color: #d60303;
+            cursor: pointer;
+            /* margin-left: 4%; */
+        }
+
+        input[type="submit"]:hover {
+            background-color: #a8efff;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        .btn {
+            width: 50% !important;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <input type="text" name="fname" placeholder="First Name" required>
+        <input type="text" name="mname" placeholder="Middle Name">
+        <input type="text" name="lname" placeholder="Last Name" required>
+        <input type="number" name="Age" placeholder="Please enter your Age" min="1" max="99" required>
+        <input type="tel" name="phone" placeholder="Phone Number" maxlength="10" required>
+        <input type="email" name="email" placeholder="Email please" required>
+        <input type="password" name="password" placeholder="Password please" required>
+        <input type="submit" value="Click to Register" class="btn">
+    </form>
+</body>
+
+</html>

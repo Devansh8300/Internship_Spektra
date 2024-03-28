@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Restaurant XYZ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(226, 232, 211);
+        }
+
+        .header {
+            text-align: center;
+            padding: 20px;
+            background-image: url("img1.jpg");
+        }
+
+        .content {
+            margin: 20px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+
+        .align {
+            padding-left: 10;
+        }
+
+        .align1 {
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        .text {
+            font-family: 'Times New Roman', serif;
+            color: antiquewhite
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        #col {
+            color: rgb(165, 244, 253);
+        }
+
+        .div-img {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+
+        img {
+            transition: transform .2s;
+            width: 100px;
+            height: 50px;
+            margin: 0 auto;
+            border-radius: 10px;
+            border: 1px solid black;
+        }
+
+        img:hover {
+            transform: scale(4.5);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1 class="text">Welcome to Our Restaurant</h1>
+        <h2 class="text" !>XYZ</h2>
+        <!-- <img src="img9.jpg" alt="Image1" height="100" width="150" type="jpeg"> -->
+    </div>
+    <br>
+    <div class="align1">
+        <a href="Restaurant_Home.html">Home</a>
+        <a href="Restaurant_Menu.html">Our Menu</a>
+        <a href="Restaurant_About.html">About Us</a>
+        <a href="Contact_Us.html">Contact Us</a>
+    </div>
+    <br>
+    <br>
+    <div>
+        <h3>Some of our Restraunt's snaps</h3>
+        <a class="div-img" href="Page2.html">
+            <img src="img1.jpg" alt="Image1" height="250" type="jpeg" class="align">
+            <img src="img6.jpg" alt="Image2" height="250" type="jpeg" class="align">
+            <img src="img7.jpg" alt="Image3" height="250" type="jpeg" class="align">
+        </a>
+        <br>
+        <br>
+        <h3>Wanna watch us cooking !!!</h3>
+        <div class="align1">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/pq3Otf0zbdk?si=u8NQ4Lq7AJGvQYa1"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+        </div>
+        <br>
+        <br>
+    </div>
+    <div class="footer">
+        <p>&copy; Thankoyu !!! Visit us again, yours XYZ</p>
+    </div>
+</body>
+</html>

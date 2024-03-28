@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<header align="center"><h1>Survey Form</h1></header>
+<head>
+    <title>Survey Form</title>
+    <style>
+        form {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        input[type=text],
+        input[type=date],
+        input[type=email],
+        textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        input[type=radio],
+        input[type=checkbox] {
+            margin-top: 10px;
+        }
+
+        button {
+            width: 100%;
+            padding: 14px 20px;
+            margin: 8px 0;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            opacity: .9;
+        }
+        .col {
+            background-color: antiquewhite; 
+        }
+
+        #inp {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            display:inline-block;
+            border: 3px solid black;
+            border-radius: 100px;
+        }
+    </style>
+</head>
+<body class="col">
+    <div>
+        <form action="Restaurant_Home.html" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="name">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="birthdate">Birthdate:</label><br>
+            <input type="date" id="birthdate" name="birthdate" required><br><br>
+            Gender:<br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br><br>
+            Interested in:<br>
+            <input type="checkbox" id="coding" name="interest" value="coding">
+            <label for="coding">Coding</label><br>
+            <input type="checkbox" id="design" name="interest" value="design">
+            <label for="design">Design</label><br><br>
+            Comments:<br>
+            <textarea id="comments" name="comments"></textarea><br><br>
+            <input id="inp" type="submit">
+        </form>
+    </div>
+</body>
+</html>
